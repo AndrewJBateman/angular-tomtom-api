@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import tt from '@tomtom-international/web-sdk-maps';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
-  title = 'angular-tomtom-api';
+export class AppComponent implements OnInit {
+  ngOnInit() {
+    const map = tt.map({
+      key: '',
+      container: 'map',
+    });
+    map.addControl(new tt.NavigationControl());
+  }
 }

@@ -1,27 +1,73 @@
-# AngularTomtomApi
+# :zap: Angular Tomtom API
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
+* Displays map data from the [Tomtom API](https://developer.tomtom.com/)
 
-## Development server
+*** Note: to open web links in a new window use: _ctrl+click on link_**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## :page_facing_up: Table of contents
 
-## Code scaffolding
+* [:zap: Angular Tomtom API](#zap-angular-tomtom-api)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## :books: General info
 
-## Build
+* Displays a [Tomtom zoomable map](https://developer.tomtom.com/maps-api/maps-api-documentation)
+* Note: [Tomtom Node module](https://www.npmjs.com/package/@tomtom-international/web-sdk-maps) containing maps etc. is 10.3MB unpacked
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## :camera: Screenshots
 
-## Running unit tests
+![Example screenshot](./img/map.png)
+![Example screenshot](./img/detail.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## :signal_strength: Technologies
 
-## Running end-to-end tests
+* [Angular v10](https://angular.io/)
+* [Node module: @tomtom-international/web-sdk-maps v5](https://www.npmjs.com/package/@tomtom-international/web-sdk-maps)
+* [Tomtom developer API](https://developer.tomtom.com/)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## :floppy_disk: Setup
 
-## Further help
+* Install dependencies by running `npm i`
+* See [Tomtom: Angular Map Display API integration tutorial](https://developer.tomtom.com/maps-sdk-web-js-public-preview/tutorials-basic/angular-map-display-api-integration-tutorial) and add code as shown
+* Get yourself an [API key from Tomtom](https://developer.tomtom.com/how-to-get-tomtom-api-key) - it's free :-)
+* Run `ng serve` to start a server on port 4200
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## :computer: Code Examples
+
+* extract from `app.component.ts` to set up Tomtom map constant
+
+```typescript
+    import tt from '@tomtom-international/web-sdk-maps';
+
+    const map = tt.map({
+        key: '<your maps api key>',
+        style: 'tomtom://vector/1/basic-main',
+        container: 'map'
+    });
+```
+
+## :cool: Features
+
+* not much code to get a zoomable world map
+
+## :clipboard: Status & To-Do List
+
+* Status: Working
+* To-Do: add functionality
+
+## :clap: Inspiration
+
+* [Tomtom: Angular Map Display API integration tutorial](https://developer.tomtom.com/maps-sdk-web-js-public-preview/tutorials-basic/angular-map-display-api-integration-tutorial)
+
+## :envelope: Contact
+
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
