@@ -8,9 +8,11 @@ import tt from '@tomtom-international/web-sdk-maps';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent implements OnInit {
-  ngOnInit() {
+  title = 'angular-tomtom-api';
+  API_key = ''
+  ngOnInit(): any {
     const map = tt.map({
-      key: '',
+      key: this.API_key,
       container: 'map',
     });
     map.addControl(new tt.NavigationControl());
