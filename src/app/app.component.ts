@@ -9,7 +9,7 @@ import tt from '@tomtom-international/web-sdk-maps';
 })
 export class AppComponent implements OnInit {
   title = 'angular-tomtom-api';
-  API_key = ''
+  API_key = '';
   ngOnInit(): any {
     const map = tt.map({
       key: this.API_key,

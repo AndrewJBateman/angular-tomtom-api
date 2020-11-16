@@ -40,9 +40,9 @@
 * Install dependencies by running `npm i`
 * See [Tomtom: Angular Map Display API integration tutorial](https://developer.tomtom.com/maps-sdk-web-js-public-preview/tutorials-basic/angular-map-display-api-integration-tutorial) and add code as shown
 * Get yourself an [API key from Tomtom](https://developer.tomtom.com/how-to-get-tomtom-api-key) - it's free :-)
-* Run `ng test to run some simple Jasmin tests`on Karma
-* Run `ng serve` to start a server on port 4200
+* Run `ng test` to run some simple Jasmin tests on Karma
 * Run `ng lint` to check syntax using TSLint. Currently all files passing :-) Note [TSLint will be replaced with ESLint](https://github.com/palantir/tslint/issues/4534)
+* Run `ng serve` to start a server on port 4200
 
 ## :computer: Code Examples
 
