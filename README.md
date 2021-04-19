@@ -21,8 +21,7 @@
 ## :books: General info
 
 * Displays a [Tomtom zoomable map](https://developer.tomtom.com/maps-api/maps-api-documentation)
-* The map module result in a build vendor chunk size of 3.59 MB
-* Updated to Angular version 11 & dependencies updated nov 2020
+* The map module results in a build vendor chunk size of 3.59 MB
 
 ## :camera: Screenshots
 
@@ -32,7 +31,7 @@
 ## :signal_strength: Technologies
 
 * [Angular v11](https://angular.io/)
-* [Node module: @tomtom-international/web-sdk-maps v5](https://www.npmjs.com/package/@tomtom-international/web-sdk-maps)
+* [Node module: @tomtom-international/web-sdk-maps v6](https://www.npmjs.com/package/@tomtom-international/web-sdk-maps)
 * [Tomtom developer API](https://developer.tomtom.com/)
 
 ## :floppy_disk: Setup
@@ -65,13 +64,17 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working
+* Status: Working. Updated april 2021
 * To-Do: add functionality. Add routing or remove routing module
 
 ## :clap: Inspiration
 
 * [Tomtom: Angular Map Display API integration tutorial](https://developer.tomtom.com/maps-sdk-web-js-public-preview/tutorials-basic/angular-map-display-api-integration-tutorial)
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
