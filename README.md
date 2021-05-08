@@ -20,8 +20,7 @@
 
 ## :books: General info
 
-* Displays a [Tomtom zoomable map](https://developer.tomtom.com/maps-api/maps-api-documentation)
-* The map module results in a build vendor chunk size of 3.59 MB
+* Displays a [Tomtom](https://developer.tomtom.com/maps-api/maps-api-documentation) zoomable map
 
 ## :camera: Screenshots
 
@@ -39,9 +38,10 @@
 * Install dependencies by running `npm i`
 * See [Tomtom: Angular Map Display API integration tutorial](https://developer.tomtom.com/maps-sdk-web-js-public-preview/tutorials-basic/angular-map-display-api-integration-tutorial) and add code as shown
 * Get yourself an [API key from Tomtom](https://developer.tomtom.com/how-to-get-tomtom-api-key) - it's free :-)
-* Run `ng test` to run some simple Jasmin tests on Karma
+* Run `ng test` to run some simple Jasmin tests on Karma. Passes as there are no tests set up.
 * Run `ng lint` to check syntax using TSLint. Currently all files passing :-) Note [TSLint will be replaced with ESLint](https://github.com/palantir/tslint/issues/4534)
 * Run `ng serve` to start a server on port 4200
+* `ng build --prod` to create build file in `dist/angular-tomtom-api` directory.
 
 ## :computer: Code Examples
 
@@ -59,13 +59,13 @@
 
 ## :cool: Features
 
-* not much code required to get a zoomable world map
+* Not much code required to get a zoomable world map
 * Some basic Jasmine tests added that all pass
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. Updated april 2021
-* To-Do: add functionality. Add routing or remove routing module
+* Status: Working. Updated may 2021. Size of build file: 1.4MB
+* To-Do: add functionality like route planning or traffic congestion. Await clearer Tomtom Angular documentation for advanced projects. Add routing or remove routing module. Remove rxjs if not used (If keeping then latest v7 would have to be reverted to v6.6.7).
 
 ## :clap: Inspiration
 
