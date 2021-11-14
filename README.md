@@ -46,8 +46,7 @@
 * Install dependencies by running `npm i`
 * See [Tomtom: Angular Map Display API integration tutorial](https://developer.tomtom.com/maps-sdk-web-js-public-preview/tutorials-basic/angular-map-display-api-integration-tutorial) and add code as shown
 * Get yourself an [API key from Tomtom](https://developer.tomtom.com/how-to-get-tomtom-api-key) - it's free :-) and add it to `app.component.ts`
-* Run `ng test` to run some simple Jasmin tests on Karma. Passes as there are no tests set up.
-* Run `ng lint` to check syntax using TSLint. Currently all files passing :-) Note [TSLint will be replaced with ESLint](https://github.com/palantir/tslint/issues/4534)
+* Run `ng test` to run some simple Jasmin tests on Karma. 2 simple tests pass.
 * Run `ng serve` to start a server on port 4200
 * Run `npm run build` to create build file in `dist/angular-tomtom-api` directory.
 
@@ -72,8 +71,8 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. Updated may 2021. Size of build file: 3.83MB - mostly Vendor files
-* To-Do: add functionality like route planning or traffic congestion. Await clearer Tomtom Angular documentation for advanced projects. Add routing or remove routing module. Remove rxjs if not used.
+* Status: Working. Size of build file: 3.83MB - mostly Vendor files
+* To-Do: add functionality like route planning or traffic congestion. Add routing or remove routing module. Remove rxjs if not used.
 
 ## :clap: Inspiration
 
