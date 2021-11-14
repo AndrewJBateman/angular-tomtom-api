@@ -37,7 +37,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v12](https://angular.io/)
+* [Angular v13](https://angular.io/)
 * [Node module: @tomtom-international/web-sdk-maps v6](https://www.npmjs.com/package/@tomtom-international/web-sdk-maps)
 * [Tomtom developer API](https://developer.tomtom.com/)
 
@@ -45,11 +45,11 @@
 
 * Install dependencies by running `npm i`
 * See [Tomtom: Angular Map Display API integration tutorial](https://developer.tomtom.com/maps-sdk-web-js-public-preview/tutorials-basic/angular-map-display-api-integration-tutorial) and add code as shown
-* Get yourself an [API key from Tomtom](https://developer.tomtom.com/how-to-get-tomtom-api-key) - it's free :-)
+* Get yourself an [API key from Tomtom](https://developer.tomtom.com/how-to-get-tomtom-api-key) - it's free :-) and add it to `app.component.ts`
 * Run `ng test` to run some simple Jasmin tests on Karma. Passes as there are no tests set up.
 * Run `ng lint` to check syntax using TSLint. Currently all files passing :-) Note [TSLint will be replaced with ESLint](https://github.com/palantir/tslint/issues/4534)
 * Run `ng serve` to start a server on port 4200
-* `ng build --prod` to create build file in `dist/angular-tomtom-api` directory.
+* Run `npm run build` to create build file in `dist/angular-tomtom-api` directory.
 
 ## :computer: Code Examples
 
@@ -72,8 +72,8 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. Updated may 2021. Size of build file: 1.4MB
-* To-Do: add functionality like route planning or traffic congestion. Await clearer Tomtom Angular documentation for advanced projects. Add routing or remove routing module. Remove rxjs if not used (If keeping then latest v7 would have to be reverted to v6.6.7).
+* Status: Working. Updated may 2021. Size of build file: 3.83MB - mostly Vendor files
+* To-Do: add functionality like route planning or traffic congestion. Await clearer Tomtom Angular documentation for advanced projects. Add routing or remove routing module. Remove rxjs if not used.
 
 ## :clap: Inspiration
 
