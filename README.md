@@ -1,13 +1,12 @@
 # :zap: Angular Tomtom API
 
 * Angular app to display map data from the [Tomtom API](https://developer.tomtom.com/)
-
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-tomtom-api?style=plastic)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-material-api?style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-material-api?style=plastic)
-![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-material-api?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-tomtom-api?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-tomtom-api?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-tomtom-api?style=plastic)
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -72,7 +71,7 @@
 ## :clipboard: Status & To-Do List
 
 * Status: Working. Size of build file: 3.83MB - mostly Vendor files
-* To-Do: add functionality like route planning or traffic congestion. Add routing or remove routing module. Remove rxjs if not used.
+* To-Do: Nothing
 
 ## :clap: Inspiration
 
