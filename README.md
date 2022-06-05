@@ -27,16 +27,15 @@
 
 ## :books: General info
 
-* Displays a [Tomtom](https://developer.tomtom.com/maps-api/maps-api-documentation) zoomable map
+* Displays a [Tomtom](https://developer.tomtom.com/maps-api/maps-api-documentation) zoomable map that shows user position with full-screen and zoom options
 
 ## :camera: Screenshots
 
 ![Example screenshot](./img/map.png)
-![Example screenshot](./img/detail.png)
 
 ## :signal_strength: Technologies
 
-* [Angular v13](https://angular.io/)
+* [Angular v14](https://angular.io/)
 * [Node module: @tomtom-international/web-sdk-maps v6](https://www.npmjs.com/package/@tomtom-international/web-sdk-maps)
 * [Tomtom developer API](https://developer.tomtom.com/)
 
@@ -44,29 +43,34 @@
 
 * Install dependencies by running `npm i`
 * See [Tomtom: Angular Map Display API integration tutorial](https://developer.tomtom.com/maps-sdk-web-js-public-preview/tutorials-basic/angular-map-display-api-integration-tutorial) and add code as shown
-* Get yourself an [API key from Tomtom](https://developer.tomtom.com/how-to-get-tomtom-api-key) - it's free :-) and add it to `app.component.ts`
-* Run `ng test` to run some simple Jasmin tests on Karma. 2 simple tests pass.
+* Get yourself an [API key from Tomtom](https://developer.tomtom.com/how-to-get-tomtom-api-key) - it's free :-) and add it to `environment.ts`
 * Run `ng serve` to start a server on port 4200
 * Run `npm run build` to create build file in `dist/angular-tomtom-api` directory.
 
 ## :computer: Code Examples
 
-* extract from `app.component.ts` to set up Tomtom map constant
+* extract from `app.component.ts`: function to get user position
 
 ```typescript
-    import tt from '@tomtom-international/web-sdk-maps';
-
-    const map = tt.map({
-        key: '<your maps api key>',
-        style: 'tomtom://vector/1/basic-main',
-        container: 'map'
+private getUserPosition = (): Observable<Position> => {
+    const userPosition = new Observable((observer: Subscriber<any>) => {
+      navigator.geolocation
+        ? navigator.geolocation.getCurrentPosition((pos: any) => {
+            observer.next({
+              latitude: pos.coords.latitude,
+              longitude: pos.coords.longitude,
+            });
+            observer.complete();
+          })
+        : observer.error();
     });
+    return userPosition;
+  };
 ```
 
 ## :cool: Features
 
 * Not much code required to get a zoomable world map
-* Some basic Jasmine tests added that all pass
 
 ## :clipboard: Status & To-Do List
 
@@ -76,6 +80,7 @@
 ## :clap: Inspiration
 
 * [Tomtom: Angular Map Display API integration tutorial](https://developer.tomtom.com/maps-sdk-web-js-public-preview/tutorials-basic/angular-map-display-api-integration-tutorial)
+* [Tomtom documentation](https://developer.tomtom.com/maps-sdk-web-js/tutorials/use-cases/how-add-and-customize-location-marker)
 
 ## :file_folder: License
 
