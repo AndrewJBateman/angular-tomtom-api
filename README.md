@@ -13,16 +13,16 @@
 ## :page_facing_up: Table of contents
 
 * [:zap: Angular Tomtom API](#zap-angular-tomtom-api)
-  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:page\_facing\_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
-  * [:signal_strength: Technologies](#signal_strength-technologies)
-  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:signal\_strength: Technologies](#signal_strength-technologies)
+  * [:floppy\_disk: Setup](#floppy_disk-setup)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
-  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clipboard: Status \& To-Do List](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
-  * [:file_folder: License](#file_folder-license)
+  * [:file\_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
@@ -35,7 +35,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v14](https://angular.io/)
+* [Angular v15](https://angular.io/)
 * [Node module: @tomtom-international/web-sdk-maps v6](https://www.npmjs.com/package/@tomtom-international/web-sdk-maps)
 * [Tomtom developer API](https://developer.tomtom.com/)
 
@@ -74,7 +74,7 @@ private getUserPosition = (): Observable<Position> => {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. Size of build file: 3.83MB - mostly Vendor files
+* Status: Working. Size of build file: 9.46MB - nearly all Vendor files
 * To-Do: Nothing
 
 ## :clap: Inspiration
