@@ -20,6 +20,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "@tomtom-international/web-sdk-maps"
+           ],
             "outputPath": "dist/angular-tomtom-api",
             "index": "src/index.html",
             "main": "src/main.ts",
