@@ -12,8 +12,13 @@ import { Position } from './interfaces/position.model';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: `<div id='map' class='map'></div>`,
+  styles: [`@import "@tomtom-international/web-sdk-maps";
+
+  #map {
+    width: 800px;
+    height: 100vh;
+  }`],
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent implements AfterViewInit {
